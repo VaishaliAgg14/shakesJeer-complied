@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.res_container {
+  width: 750px;
+  margin: 50px auto 0px auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1055px) {
+  .ant-modal-content {
+    width: 625px !important;
+    height: 250px !important;
+  }
+}
+.ant-modal-close{
+ background-color: transparent !important;
+ color: black !important;
+
+}
+
+.res_container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.res_container h1 span {
+  font-weight: 700;
+  font-style: italic;
+  color: #d90368;
+  border-bottom: 2px dashed currentColor;
+}
+.res_container .res_button-effect {
+  padding: 1px 10px;
+}
+.res_container .res_button-effect h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.res_container .res_button-effect a {
+  margin-right: 10px;
+}
+.res_container .res_button-effect a:nth-child(2) {
+  background-color: #370d59;
+}
+.res_container .res_button-effect a:nth-child(2):hover {
+  background-color: #8920df;
+}
+.res_container .res_button-effect a:nth-child(3) {
+  background-color: #660066;
+}
+.res_container .res_button-effect a:nth-child(3):hover {
+  background-color: #ff00ff;
+}
+.res_container .res_button-effect a:nth-child(4) {
+  background-color: #135153;
+}
+.res_container .res_button-effect a:nth-child(4):hover {
+  background-color: #2fcad0;
+}
+.res_container .res_button-effect a:nth-child(5) {
+  background-color: #66000e;
+}
+.res_container .res_button-effect a:nth-child(5):hover {
+  background-color: #ff0022;
+}
+.res_container .res_button-effect a:nth-child(6) {
+  background-color: #1c204a;
+}
+.res_container .res_button-effect a:nth-child(6):hover {
+  background-color: #4650b9;
+}
+.res_container .res_button-effect a:nth-child(7) {
+  background-color: #412539;
+}
+.res_container .res_button-effect a:nth-child(7):hover {
+  background-color: #a25d8e;
+}
+.res_container .res_button-effect a:nth-child(8) {
+  background-color: #444b1b;
+}
+.res_container .res_button-effect a:nth-child(8):hover {
+  background-color: #a9bb44;
+}
+.res_container .res_button-effect a:nth-child(9) {
+  background-color: #513915;
+}
+.res_container .res_button-effect a:nth-child(9):hover {
+  background-color: #cb8f34;
+}
+.res_container .res_button-effect a:last-child {
+  margin-right: 0px;
+}
+
+/* button styles !!!YOU NEED THEM 
+  !!!ALSO YOU NEED TO ADD FONTWESOME */
+.res_effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: "Roboto", sans-serif;
+  /* put your font-family */
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* effect-1 styles */
+.res_effect.res_effect-1 {
+  transition: all 0.2s linear 0s;
+}
+.res_effect.res_effect-1:before {
+  content: "\1F872";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 25px;
+  transition: all 0.2s linear 0s;
+}
+.res_effect.res_effect-1:hover {
+  text-indent: -25px;
+}
+.res_effect.res_effect-1:hover:before {
+  opacity: 1;
+  text-indent: 7px;
+}

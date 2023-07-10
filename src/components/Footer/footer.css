@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: #161616;
+  color: #fff;
+  padding: 30px 0 10px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.row {
+  width: 85%;
+  margin: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: left;
+}
+.col:nth-child(3) {
+  flex-basis: 20%;
+}
+.col:nth-child(4) {
+  flex-basis: 25%;
+}
+.footer-logo {
+  width: 160px;
+  margin-bottom: 30px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 20px;
+  color: #f5c656;
+  position: relative;
+}
+.phone_text {
+  color: #ccc;
+}
+.email-id {
+  width: fit-content;
+  text-decoration: none;
+  margin: 20px 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.quicklinks {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.quicklinks i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.quicklink_text {
+  display: inline-block;
+  font-size: 16px;
+}
+.footer_text {
+  font-size: 10px;
+}
+
+.quicklinks:hover {
+  /* border-bottom: 1px solid #ccc; */
+  color: #f5c656;
+  transform: translateX(10px);
+}
+.quicklink_text:hover {
+  color: #f5c656;
+}
+.far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.input {
+  width: 10%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+.button {
+  background: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.fas {
+  font: size 16px;
+  color: #f5c656;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons .fa {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 6px 6px;
+  margin-left: 0;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1.5px solid #ccc;
+  margin: 20px auto;
+  margin-top: 30px;
+}
+.copyright {
+  text-align: center;
+  color: #f5c656;
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col:nth-child(3),
+  .col:nth-child(4) {
+    flex-basis: 100%;
+  }
+
+  .row {
+    align-items: flex-end;
+  }
+
+  .row .col:nth-child(1) p,
+  .row .col:nth-child(1) h3 {
+    display: none;
+  }
+
+  .row .col:nth-child(3) ul,
+  .row .col:nth-child(3) h3 {
+    display: none;
+  }
+}
+
+.fa-facebook:hover {
+  background-color: #4867aa;
+  color: white;
+}
+.fa-instagram:hover {
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+  color: white;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  color: white;
+}
+.fa-twitter:hover {
+  background-color: #00acee;
+  color: white;
+}
+.fa-discord:hover {
+  background-color: #738adb;
+  color: white;
+}
+.email-id a {
+  color: #fff;
+}
+@media screen and (max-width: 850px) and (min-width: 701px) {
+  .col {
+    flex-basis: 50%;
+  }
+  .col:nth-child(4),
+  .col:nth-child(3) {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 772px) {
+  .underline {
+    position: absolute;
+    top: 40px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1066px) {
+  .row {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 282px) {
+  .social-icons .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 960px) {
+  .social-icons br {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .social-icons br {
+    display: block;
+  }
+}

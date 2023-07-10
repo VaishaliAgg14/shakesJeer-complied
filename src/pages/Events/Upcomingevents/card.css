@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@font-face {
+  font-family: "Telefon Black";
+  src: url("https://raw.githubusercontent.com/arnabmunshi/fontface/master/TelefonBlack/Telefon-Black.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/arnabmunshi/fontface/master/TelefonBlack/Telefon-Black.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+td:nth-child(1) {
+  margin-left: 30px;
+}
+.parentflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.event-button a{
+  padding: 5px 15px;
+  background-color: #a81f6a;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: .5s;
+}
+
+.event-button a:hover{
+  color: black;
+  font-weight: 700;
+  background-color: #a85784
+}
+
+.event-card1 {
+  position: relative;
+  width: 43vw;
+  margin: 20px 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: "Varela Round", sans-serif;
+  color: black;
+  background: linear-gradient(135deg, #f76b1c 0%, #fad961 100%);
+  border-radius: 8px;
+  box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+}
+table {
+  vertical-align: text-top;
+  width: 100%;
+}
+td:nth-child(1) {
+  width: 10%;
+}
+table .month {
+  text-transform: uppercase;
+  color: #a1045a;
+  font-size: 28px;
+  transform: scaleY(1.9);
+  margin-left: 0px;
+  font-weight: 700;
+  padding-bottom: 1.4vh;
+}
+table .month-date-devider {
+  width: 10vh;
+  background-color: #3cbfaf;
+  height: 5px;
+}
+table .date {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: normal;
+  color: #fff;
+  transform: scaleY(2.7);
+  padding-top: 2vh;
+  margin-right: 6vh;
+  text-shadow: 6px 4px 4px rgb(59, 59, 59);
+}
+.event-thumbnail {
+  border-radius: 5px;
+  padding-right: 0;
+  width: 100%;
+}
+.event-title > h3 {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 10px;
+}
+.event-id {
+  text-align: center;
+}
+.event-location,
+.event-time {
+  display: block;
+}
+.event-time{
+  text-decoration: underline;
+  font-size: 15px;
+}
+.event-location{
+  font-size: 20px;
+}
+
+.event-time,
+.event-location {
+  font-weight: 600;
+  color: rgba(20, 20, 20, 0.822);
+}
+.event-time {
+  padding-left: 2px;
+}
+.event-quote {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+}
+.event-form {
+  width: 145px;
+  margin: 20px auto;
+  font-weight: 700;
+}
+.event-formlink {
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: #3cbfaf;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.eventsection-seemore {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-left: -10px;
+  font-size: 2em;
+  color: antiquewhite;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 950px) {
+  .event-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .event-thumbnail {
+    width: 100%;
+    padding: 0;
+    margin: 0 20px;
+  }
+  .event-card1 {
+    width: 60%;
+    margin: 30px 0px;
+    padding: 10px 30px;
+    display: inline-block;
+  }
+  .eventsection-seemore {
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .event-container {
+    gap: 10px;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .event-card1 {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .event-container {
+    padding: 0;
+    margin: 0;
+  }
+  .event-location,
+  table .month {
+    font-size: 18px;
+  }
+  table .date {
+    font-size: 40px;
+  }
+  .event-time,
+  .event-quote {
+    font-size: 14px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+  div .event-title h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .event-form .event-formlink {
+    font-size: 14px;
+    width: auto;
+    position: relative;
+    left: -5%;
+  }
+  
+  .event-card1 {
+    padding: 10px 20px;
+  }
+  .event-quote {
+    font-size: 14px;
+    width: 100%;
+  }
+  .eventsection-seemore {
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .event-card1 {
+    width: 80%;
+  }
+  table .month {
+    font-size: 24px;
+  }
+  table .date {
+    font-size: 30px;
+    margin-left: 2.5vw;
+    margin-right: 2vw;
+  }
+  .event-form .event-formlink {
+    font-size: 12px;
+    width: auto;
+    position: relative;
+    left: -5%;
+  }
+  .event-title {
+    margin-top: 3vh;
+  }
+}
+@media (max-width: 400px) {
+  table .date {
+    font-size: 25px;
+  }
+  .event-thumbnail{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .event-title {
+    margin-top: 3vh;
+  }
+  table .month {
+    font-size: 18px;
+    margin: 0;
+  }
+  table .date {
+    font-size: 18px;
+    margin: 0;
+  }
+  table .month-date-devider {
+    width: 6vh;
+  }
+  .event-thumbnail {
+    height: 20vh;
+    width: 105%;
+    margin: 0 0 0 6px;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .event-card1 {
+    width: 700px;
+    max-width: 700px;
+  }
+  .event-thumbnail {
+    width: 550px;
+  }
+  .event-location,
+  .event-time,
+  .event-quote {
+    font-size: 18px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  div .event-title h3 {
+    font-size: 48px;
+  }
+  .event-form .event-formlink {
+    font-size: 24px;
+    width: 260px;
+  }
+}

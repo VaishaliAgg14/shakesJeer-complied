@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital@1&family=Mochiy+Pop+P+One&display=swap");
+
+.jr_componentss {
+  background-color: #f0f0ef7d;
+  padding-bottom: 60px;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+}
+.jr_card {
+  position: relative;
+  width: 600px;
+  height: 460px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  overflow: hidden;
+  margin: 1.85rem;
+}
+.jr_card:hover {
+  height: 600px;
+}
+.jr_card img {
+  height: 400px;
+  width: 100%;
+  border-radius: 16px;
+  transition: 0.5s;
+}
+.jr_card:hover img {
+  border-radius: 16px 16px 0 0;
+}
+
+.jr_card .jr_card-body {
+  padding: 0.5rem 0.85rem 1rem;
+  height: 0;
+}
+
+.jr_card .jr_card-body h6 {
+  color: #464646;
+  /* margin: 0.5rem 0; */
+  /* font-style: italic; */
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.jr_card:hover h6 {
+  color: blue;
+  transition: all 1s ease-in-out;
+  transform: scale(1.5);
+}
+.jr_card .jr_card-body p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 1.3rem;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+
+.jr_card .jr_card-body div {
+  text-align: right;
+  width: 100%;
+}
+@media (max-width: 560px) {
+  .jr_card {
+    width: 455px;
+    height: 350px;
+  }
+  .jr_card img {
+    height: 85%;
+  }
+  .jr_card:hover {
+    height: 500px;
+  }
+  .jr_card:hover img {
+    height: 300px;
+  }
+  .jr_card .jr_card-body h6 {
+    font-size: 25px;
+  }
+  .jr_card .jr_card-body p {
+    font-size: 16px;
+  }
+  .jr_card:hover h6 {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 430px) {
+  .jr_card {
+    width: 412px;
+    height: 300px;
+  }
+  .jr_card img {
+    height: 80%;
+  }
+  .jr_card:hover {
+    height: 500px;
+  }
+  .jr_card:hover img {
+    height: 280px;
+  }
+  .jr_card .jr_card-body h6 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .jr_card {
+    width: 390px;
+    height: 245px;
+  }
+  .jr_card img {
+    height: 75%;
+  }
+  .jr_card:hover {
+    height: 530px;
+  }
+  .jr_card:hover img {
+    height: 240px;
+  }
+  .jr_card .jr_card-body h6 {
+    /* padding-top: 5px; */
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .jr_card {
+    width: 351px;
+    height: 270px;
+  }
+  .jr_card img {
+    height: 70%;
+  }
+  .jr_card:hover {
+    height: 530px;
+  }
+  .jr_card:hover img {
+    height: 180px;
+  }
+  .jr_card .jr_card-body h6 {
+    padding-top: 20px;
+    font-size: 17px;
+  }
+}

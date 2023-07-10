@@ -1,0 +1,129 @@
+/* qoute */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Parisienne&family=Sail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+.ab-container {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+.ab-image {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ab-image img {
+  width: 50%;
+  height: auto;
+}
+.ab-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.ab-quote {
+  padding: 1.8rem 180px 1.2rem;
+  font-size: 45px;
+  color: #484848;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 2px;
+  text-align: right;
+  font-weight: 700;
+}
+.ab-box {
+  display: flex;
+  padding: 0 7rem;
+}
+.ab-box1 {
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-family: "PT Serif", serif;
+}
+
+@media (max-width: 1235px) {
+  .ab-heading {
+    font-size: 3.8rem;
+  }
+  .ab-quote {
+    padding: 2rem 150px 1.2rem;
+    font-size: 35px;
+  }
+}
+@media (max-width: 1000px) {
+  .ab-heading {
+    font-size: 3.5rem;
+  }
+  .ab-quote {
+    padding: 2rem 110px 1.2rem;
+    font-size: 27px;
+  }
+  .ab-box {
+    padding: 0 5rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .ab-box {
+    padding: 0 3rem;
+  }
+  .ab-quote {
+    padding: 2rem 80px 1.2rem;
+    font-size: 25px;
+  }
+}
+@media (max-width: 750px) {
+  .ab-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 645px) {
+  .ab-heading {
+    font-size: 3rem;
+  }
+  .ab-quote {
+    padding: 2rem 60px 1.2rem 20px;
+    font-size: 25px;
+  }
+  .ab-box {
+    padding: 0 1.5rem;
+  }
+  .ab-box1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 505px) {
+  .ab-heading {
+    font-size: 2rem;
+  }
+  .ab-quote {
+    padding: 2rem 40px 1.2rem 10px;
+    font-size: 25px;
+  }
+  .ab-box {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .ab-quote {
+    /* padding: 1.8rem 50px 1.2rem; */
+    font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .ab-quote {
+    padding: 2rem 2rem 1.2rem;
+    font-size: 1.2rem;
+  }
+  .ab-box {
+    padding: 0rem;
+  }
+  .ab-box1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 330px) {
+}
